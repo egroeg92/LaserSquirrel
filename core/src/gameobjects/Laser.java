@@ -47,15 +47,12 @@ public class Laser {
 		else
 			speedY = 0;
 	}
+	
 	public static void restart(){
 		laserSpeed = 95;
 	}
-	public static void increaseLaserSpeed(float inc){
-		laserSpeed += inc;
-	}
 	
 	public void update(float delta) {
-		
 		positionX += (delta * speedX);
 		positionY += (delta * speedY);
 		
